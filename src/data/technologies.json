@@ -1,0 +1,185 @@
+{
+  "frontend": {
+    "title": "Frontend",
+    "technologies": [
+      {
+        "name": "React.js",
+        "icon": "FaReact",
+        "time": "1 años",
+        "level": 80
+      },
+      {
+        "name": "JavaScript",
+        "icon": "SiJavascript",
+        "time": "5 años",
+        "level": 90
+      },
+      {
+        "name": "HTML5",
+        "icon": "FaHtml5",
+        "time": "5 años",
+        "level": 98
+      },
+      {
+        "name": "CSS3",
+        "icon": "FaCss3Alt",
+        "time": "5 años",
+        "level": 90
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "FaBootstrap",
+        "time": "4 años",
+        "level": 90
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "SiTailwindcss",
+        "time": "1 año",
+        "level": 80
+      },
+      {
+        "name": "Material UI",
+        "icon": "SiMaterialui",
+        "time": "1 año",
+        "level": 75
+      },
+      {
+        "name": "jQuery",
+        "icon": "SiJquery",
+        "time": "4 años",
+        "level": 90
+      }
+    ]
+  },
+  "backend": {
+    "title": "Backend",
+    "technologies": [
+      {
+        "name": "C#",
+        "icon": "SiCsharp",
+        "time": "3 años",
+        "level": 90
+      },
+      {
+        "name": "ASP.NET Core",
+        "icon": "SiDotnet",
+        "time": "3 años",
+        "level": 95
+      },
+      {
+        "name": "Entity Framework",
+        "icon": "SiMicrosoftazure",
+        "time": "3 años",
+        "level": 90
+      },
+      {
+        "name": "PHP",
+        "icon": "FaPhp",
+        "time": "2 años",
+        "level": 80
+      },
+
+      {
+        "name": "Laravel",
+        "icon": "FaLaravel",
+        "time": "2 años",
+        "level": 70
+      }
+    ]
+  },
+  "databases": {
+    "title": "Bases de Datos",
+    "technologies": [
+      {
+        "name": "SQL Server",
+        "icon": "SiMicrosoftsqlserver",
+        "time": "5 años",
+        "level": 80
+      },
+      {
+        "name": "MySQL",
+        "icon": "SiMysql",
+        "time": "5 años",
+        "level": 80
+      },
+      {
+        "name": "Elasticsearch",
+        "icon": "SiElasticsearch",
+        "time": "1 año",
+        "level": 70
+      }
+    ]
+  },
+  "cloud": {
+    "title": "Cloud & DevOps",
+    "technologies": [
+      {
+        "name": "Azure",
+        "icon": "VscAzure",
+        "time": "2 años",
+        "level": 70
+      },
+
+      {
+        "name": "Azure DevOps",
+        "icon": "VscAzureDevops",
+        "time": "2 años",
+        "level": 80
+
+      },
+      {
+        "name": "Docker",
+        "icon": "FaDocker",
+        "time": "1/2 año",
+        "level": 60
+      }
+    ]
+  },
+  "versionControl": {
+    "title": "Control de Versiones",
+    "technologies": [
+      {
+        "name": "Git",
+        "icon": "FaGitAlt",
+        "time": "4 años",
+        "level": 90
+      },
+      {
+        "name": "GitHub",
+        "icon": "FaGithub",
+        "time": "4 años",
+        "level": 85
+      }
+    ]
+  },
+  "tools": {
+    "title": "Herramientas",
+    "technologies": [
+      {
+        "name": "Visual Studio",
+        "icon": "DiVisualstudio",
+        "time": "3 años",
+        "level": 90
+      },
+      {
+        "name": "VS Code",
+        "icon": "DiVisualstudio",
+        "time": "5 años",
+        "level": 95
+      },
+      {
+        "name": "Postman",
+        "icon": "SiPostman",
+        "time": "3 años",
+        "level": 85
+      },
+      {
+        "name": "NPM",
+        "icon": "FaNpm",
+        "time": "2 años",
+        "level": 80
+      }
+    ]
+  }
+} 

@@ -19,7 +19,7 @@ const Inicio = () => {
           </p>
           <div className="cta-buttons">
             <button 
-              onClick={() => scrollToSection('skills')} 
+              onClick={() => scrollToSection('technologies')} 
               className="btn primary"
             >
               Ver Tecnologías
