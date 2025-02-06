@@ -5,7 +5,7 @@
       {
         "name": "React.js",
         "icon": "FaReact",
-        "time": "1 años",
+        "time": "1 año",
         "level": 80
       },
       {
@@ -79,7 +79,6 @@
         "time": "2 años",
         "level": 80
       },
-
       {
         "name": "Laravel",
         "icon": "FaLaravel",
@@ -120,13 +119,11 @@
         "time": "2 años",
         "level": 70
       },
-
       {
         "name": "Azure DevOps",
         "icon": "VscAzureDevops",
         "time": "2 años",
         "level": 80
-
       },
       {
         "name": "Docker",
@@ -182,4 +179,4 @@
       }
     ]
   }
-} 
+}

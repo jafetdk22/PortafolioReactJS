@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="contact-grid">
 
           <a 
-            href="https://github.com/tuUsuario" 
+            href="https://github.com/jafetdk22" 
             target="_blank" 
             rel="noopener noreferrer"
             className="contact-card"
@@ -16,7 +16,7 @@ const Contact = () => {
             <span>GitHub</span>
           </a>
           <a 
-            href="https://linkedin.com/in/tuUsuario" 
+            href="https://www.linkedin.com/in/jafet-solano-0615991a3/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="contact-card"
@@ -25,7 +25,7 @@ const Contact = () => {
             <span>LinkedIn</span>
           </a>
           <a 
-            href="mailto:tuemail@ejemplo.com"
+            href="mailto:ing.jafet.sg@outlook.com"
             className="contact-card"
           >
             <FaEnvelope className="contact-icon" />
