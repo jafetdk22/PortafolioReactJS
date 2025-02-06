@@ -1,0 +1,213 @@
+/* Variables de color para modo claro/oscuro */
+:root {
+  --modal-overlay-bg: rgba(0, 0, 0, 0.3);
+  --modal-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(245, 245, 245, 0.85));
+  --modal-border: rgba(255, 255, 255, 0.1);
+  --modal-text: #4a5568;
+  --modal-heading: #2c3e50;
+  --modal-close-bg: #f8f9fa;
+  --modal-close-hover-bg: #e9ecef;
+  --modal-close-color: #2c3e50;
+  --modal-close-hover-color: #e74c3c;
+  --modal-border-color: #eaeaea;
+  --modal-bullet-color: #3498db;
+  --modal-scrollbar-bg: #f1f1f1;
+  --modal-scrollbar-thumb: #c1c1c1;
+  --modal-scrollbar-thumb-hover: #a8a8a8;
+  --modal-shadow: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] {
+  --modal-overlay-bg: rgba(0, 0, 0, 0.4);
+  --modal-bg: linear-gradient(145deg, rgba(26, 26, 26, 0.85), rgba(45, 45, 45, 0.85));
+  --modal-border: rgba(255, 255, 255, 0.05);
+  --modal-text: #e2e8f0;
+  --modal-heading: #f1f5f9;
+  --modal-close-bg: #2d3748;
+  --modal-close-hover-bg: #4a5568;
+  --modal-close-color: #e2e8f0;
+  --modal-close-hover-color: #fc8181;
+  --modal-border-color: #4a5568;
+  --modal-bullet-color: #60a5fa;
+  --modal-scrollbar-bg: #2d3748;
+  --modal-scrollbar-thumb: #4a5568;
+  --modal-scrollbar-thumb-hover: #606060;
+  --modal-shadow: rgba(0, 0, 0, 0.4);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--modal-overlay-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background: var(--modal-bg);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px var(--modal-shadow);
+  animation: slideIn 0.3s ease-out;
+  border: 1px solid var(--modal-border);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--modal-border-color);
+}
+
+.modal-header h2 {
+  font-size: 1.8rem;
+  color: var(--modal-heading);
+  margin: 0;
+  font-weight: 600;
+}
+
+.modal-close {
+  background: var(--modal-close-bg);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 50%;
+  color: var(--modal-close-color);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  background: var(--modal-close-hover-bg);
+  color: var(--modal-close-hover-color);
+  transform: rotate(90deg);
+}
+
+.modal-body {
+  color: var(--modal-text);
+  line-height: 1.6;
+}
+
+.modal-body h3 {
+  color: var(--modal-heading);
+  margin: 20px 0 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.modal-body ul {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.modal-body li {
+  margin: 10px 0;
+  position: relative;
+  padding-left: 15px;
+}
+
+.modal-body li::before {
+  content: "•";
+  color: var(--modal-bullet-color);
+  font-weight: bold;
+  position: absolute;
+  left: -15px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Estilos para scrollbar */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: var(--modal-scrollbar-bg);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: var(--modal-scrollbar-thumb);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: var(--modal-scrollbar-thumb-hover);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .modal-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-body h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animación para las secciones del modal */
+.modal-section {
+  animation: sectionFadeIn 0.5s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.modal-section:hover {
+  transform: translateX(10px);
+}
+
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto de retraso escalonado para cada sección */
+.modal-section:nth-child(1) { animation-delay: 0.1s; }
+.modal-section:nth-child(2) { animation-delay: 0.2s; }
+.modal-section:nth-child(3) { animation-delay: 0.3s; } 
