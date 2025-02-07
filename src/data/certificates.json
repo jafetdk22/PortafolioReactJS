@@ -1,0 +1,119 @@
+{
+  "courses": {
+    "title": "Cursos",
+    "items": [
+      {
+        "id": 1,
+        "title": "Curso Básico de Programación con C#",
+        "platform": "Platzi",
+        "date": "Enero 2025",
+        "image": "/src/assets/images/Cursos/CursoBasicodeCsharp.png",
+        "link": "https://platzi.com/p/jafet-solano/curso/3086-csharp/diploma/detalle/"
+      },
+      {
+        "id": 2,
+
+        "title": "Curso de APIs con .NET",
+        "platform": "Platzi",
+        "date": "Enero 2025",
+        "image": "/src/assets/images/Cursos/ApisConNet.png", 
+        "link": "https://platzi.com/p/jafet-solano/curso/2983-apis-net/diploma/detalle/"
+      },
+      {
+        "id": 3,
+        "title": "Curso de Aplicaciones Web con Blazor WebAssembly y .NET",
+        "platform": "Platzi",
+        "date": "Enero 2025",
+        "image": "/src/assets/images/Cursos/AplicacionesWebConBlazorWebassemblyYNet.png",
+        "link": "https://platzi.com/p/jafet-solano/curso/5382-blazor-webassembly/diploma/detalle/"
+      },
+      {
+        "id": 4,
+        "title": "Curso de Buenas Prácticas y Código Limpio en C#",
+        "platform": "Platzi",
+        "date": "Enero 2025",
+        "image": "/src/assets/images/Cursos/BuenasPracticasYCodigoLimpioEnCSharp.png",
+        "link": "https://platzi.com/p/jafet-solano/curso/4788-clean-code-csharp/diploma/detalle/"
+      },
+      {
+        "id": 5,
+        "title": "Curso de Fundamentos de .NET",
+        "platform": "Platzi",
+        "date": "Enero 2025",
+        "image": "/src/assets/images/Cursos/FundamentosDeNet.png",
+        "link": "https://platzi.com/p/jafet-solano/curso/2883-fundamentos-net/diploma/detalle/"
+      },
+      {
+        "id": 6,
+        "title": "Curso de Programación Orientada a Objetos con C#",
+        "platform": "Platzi",
+        "date": "Enero 2025",
+        "image": "/src/assets/images/Cursos/ProgramacionOrientadaAObjetosConCSharp.png",
+        "link": "https://platzi.com/p/jafet-solano/curso/8036-c-sharp-poo/diploma/detalle/"
+      },
+      {
+        "id": 7,
+        "title": "Curso de Unit Testing con C# y .NET",
+        "platform": "Platzi",
+        "date": "Enero 2025",
+        "image": "/src/assets/images/Cursos/CursoDeUnitTestingConCSharpYNet.png",
+        "link": "https://platzi.com/p/jafet-solano/curso/7995-unit-testing-csharp/diploma/detalle/"
+      },
+      {
+        "id": 8,
+        "title": "Curso de React.js",
+        "platform": "Platzi",
+        "date": "Febrero 2025",
+        "image": "/src/assets/images/Cursos/ReactJS.png",
+        "link": "https://platzi.com/p/jafet-solano/curso/7395-react/diploma/detalle/"
+      },
+      {
+        "id": 9,
+        "title": "Curso de Inglés Básico A1 para Principiantes",
+        "platform": "Platzi",
+        "date": "November 2024",
+        "image": "/src/assets/images/Cursos/BasicEnglishCourseA1ForBeginners.png",
+        "link": "https://platzi.com/p/jafet-solano/curso/10629-ingles-a1-principiantes/diploma/detalle/"
+      },
+      {
+        "id": 10,
+        "title": "Curso de Inglés Básico A2: Preguntas y Respuestas Comunes",
+        "platform": "Platzi",
+        "date": "January 2025",
+        "image": "/src/assets/images/Cursos/CommonQuestionsAndAswers.png",
+        "link": "https://platzi.com/p/jafet-solano/curso/4988-basico-preguntas-respuestas/diploma/detalle/"
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Certificados",
+    "items": [
+      {
+        "id": 1,
+        "title": "Backend con C# y .NET",
+        "platform": "Platzi",
+        "date": "Enero 2025",
+        "image": "/src/assets/images/Certificados/BackendConCSharpYNet.png",
+        "link": "https://platzi.com/p/jafet-solano/ruta/9560-web-net/diploma/detalle/"
+
+      },
+      {
+        "id": 2,
+        "title": "Introduction to Programming using HTML and CSS",
+        "platform": "Microsoft Technology Associate",
+        "date": "Marzo 2021",
+        "image": "/src/assets/images/Certificados/Html5Css3.png",
+        "link": " "
+      },
+      {
+        "id": 3,
+        "title": "Grade 4 Graded Examination in spoken English (GESE)",
+        "platform": "Trinity College London",
+        "date": "March 2023",
+        "image": "/src/assets/images/Certificados/TrinityCollegeLondonGade4.png",
+        "link": " "
+      }
+    ]
+  }
+} 
+

@@ -23,7 +23,7 @@ const NavBar = () => {
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Letra J estilizada */}
+          {/* SVG: Letra J con color de acento */}
           <path 
             d="M20 8C20 8 25 8 25 12V24C25 30 18 32 13 30"
             stroke="var(--accent-color)"
@@ -32,7 +32,7 @@ const NavBar = () => {
             className="letter-j"
           />
           
-          {/* Letra S */}
+          {/* SVG: Letra S con color de texto principal */}
           <path 
             d="M35 14C35 11 38 8 42 8C46 8 49 11 49 14C49 20 35 19 35 25C35 28 38 31 42 31C46 31 49 28 49 25"
             stroke="var(--text-primary)"
@@ -41,7 +41,7 @@ const NavBar = () => {
             className="letter-main"
           />
           
-          {/* Punto decorativo */}
+          {/* SVG: Punto decorativo con color de acento */}
           <circle 
             cx="55" 
             cy="19" 
@@ -50,7 +50,7 @@ const NavBar = () => {
             className="dot"
           />
           
-          {/* Línea decorativa */}
+          {/* SVG: Líneas decorativas superiores e inferiores */}
           <path 
             d="M65 8L120 8"
             stroke="var(--text-primary)"
@@ -59,7 +59,6 @@ const NavBar = () => {
             className="line"
           />
           
-          {/* Línea decorativa inferior */}
           <path 
             d="M75 31L110 31"
             stroke="var(--text-primary)"
