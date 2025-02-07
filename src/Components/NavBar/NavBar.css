@@ -1,0 +1,143 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg-primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-brand {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 0.5rem;
+}
+
+.nav-brand:hover {
+    transform: scale(1.05);
+}
+
+.nav-brand svg path,
+.nav-brand svg circle {
+    transition: all 0.3s ease;
+}
+
+.nav-brand:hover .letter-j {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 200;
+    animation: drawLetter 1.5s ease forwards;
+}
+
+.nav-brand:hover .letter-main {
+    stroke: var(--accent-color);
+}
+
+.nav-brand:hover .dot {
+    transform: scale(1.5);
+    transform-origin: center;
+}
+
+.nav-brand:hover .line {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: drawLine 0.8s ease forwards;
+}
+
+@keyframes drawLetter {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background-color: var(--bg-primary);
+        width: 100%;
+        padding: 2rem;
+        transition: right 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.open {
+        right: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-toggle.open span:first-child {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .nav-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.open span:last-child {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+} 

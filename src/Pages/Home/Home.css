@@ -1,6 +1,6 @@
 .home-container {
     width: 100%;
-    padding: 2rem;
+    padding: 5rem 2rem 2rem;
     background-color: var(--bg-primary);
     color: var(--text-primary);
 }
@@ -136,8 +136,58 @@
     color: var(--accent-color);
 }
 
+.contact-section {
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact-section h2 {
+    margin-bottom: 2rem;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text-primary);
+    min-width: 150px;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px var(--card-shadow);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+/* Ajuste para scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
+    .home-container {
+        padding: 4rem 1rem 1rem;
+    }
+
     .hero-section {
         flex-direction: column;
         text-align: center;
@@ -158,4 +208,55 @@
     .hero-image img {
         max-width: 400px;
     }
+
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-card {
+        width: 80%;
+    }
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.certificates-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificates-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificates-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.certificate-info {
+    padding: 1rem;
+}
+
+.certificate-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+.certificate-info p {
+    margin: 0.5rem 0 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
 }

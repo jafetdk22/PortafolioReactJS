@@ -1,0 +1,177 @@
+.technologies-section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.technologies-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.categories-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.category-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-btn.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.technologies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0.8rem;
+}
+
+.tech-card {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+}
+
+.tech-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tech-icon {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  min-width: 1.2rem;
+  width: auto;
+  height: auto;
+}
+
+.tech-header h3 {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.tech-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: relative;
+  padding-right: 2.5rem;
+}
+
+.tech-time {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: visible;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar::after {
+  content: attr(data-level);
+  position: absolute;
+  right: 0;
+  top: -20px;
+  transform: translateX(50%);
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2), transparent);
+  border-radius: 4px 4px 0 0;
+}
+
+/* Animación de entrada para las tarjetas */
+.tech-card {
+  animation: fadeInUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .technologies-section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .technologies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .category-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+} 

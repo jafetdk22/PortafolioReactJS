@@ -1,0 +1,136 @@
+{
+  "development": {
+    "title": "Desarrollo Web",
+    "content": {
+      "sections": [
+        {
+          "title": "Tecnologías Frontend",
+          "items": [
+            "React.js, Vite",
+            "Tailwind CSS, Bootstrap, Material UI, Sass",
+            "HTML5, CSS3, JavaScript",
+            "Ajax, Fetch, jQuery",
+            "Responsive Design"
+          ]
+        },
+        {
+          "title": "Tecnologías Backend",
+          "items": [
+            "C#, ASP.NET Core, Entity Framework Core, Azure",
+            "PHP, Laravel",
+            "SQL Server, MySQL, Elasticsearch",
+            "Bases de datos SQL y NoSQL"
+          ]
+        },
+        {
+          "title": "Tecnologías Versionamiento",
+          "items": ["Git, GitHub, GitLab, Azure DevOps"]
+        },
+        {
+          "title": "Herramientas de Desarrollo",
+          "items": [
+            "Visual Studio, Visual Studio Code",
+            "Sublime Text, NPM, Postman, Docker, Google Colab"
+          ]
+        }
+      ]
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "content": {
+      "sections": [
+        {
+          "title": "Formación Académica",
+          "items": [
+            "Ingeniero en Sistemas Computacionales",
+            "Técnico Electromecánico"
+          ]
+        },
+        {
+          "title": "Cursos",
+          "items": [
+            "Curso Básico de Programación con C#",
+            "Curso de APIs con .NET",
+            "Curso de Aplicaciones Web con Blazor WebAssembly y .NET",
+            "Curso de Buenas Prácticas y Código Limpio en C#",
+            "Curso de Fundamentos de .NET",
+            "Curso de Programación Orientada a Objetos con C#",
+            "Curso de Unit Testing con C# y .NET",
+            "Curso de React.js",
+            "Curso de Inglés Básico A1 para Principiantes",
+            "Curso de Inglés Básico A2: Preguntas y Respuestas Comunes"
+          ]
+        },
+        {
+          "title": "Certificaciones",
+          "items": [
+            "Backend con C# y .NET",
+            "Grade 4 Graded Examination in spoken English (GESE)",
+            "Introduction to Programming using HTML and CSS"
+          ]
+        }
+      ]
+    }
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "content": {
+      "sections": [
+        {
+          "title": "Epica Solutions - Desarrollador .Net",
+          "items": [
+            "Noviembre 2023 - Diciembre 2023",
+            "Desarrollo de Aplicación Web para Banca en Línea: Lideré el desarrollo del Frontend utilizando HTML5, CSS3, JavaScript, Bootstrap 5 y jQuery.",
+            "Integración Segura de Servicios: Gestioné la administración de API Gateway para asegurar la integración de servicios.",
+            "Implementación de Requerimientos: Desarrollé nuevas funcionalidades basadas en necesidades del cliente.",
+            "Optimización de Seguridad: Apliqué prácticas de seguridad como validación de datos.",
+            "Despliegue en Múltiples Entornos: Realicé despliegues en desarrollo, QA y producción usando Azure DevOps y Git.",
+            "Gestión del Equipo: Coordiné al equipo bajo metodologías ágiles.",
+            "Patrones de Diseño: Apliqué MVC e inyección de dependencias para mantener un código limpio y escalable.",
+            "Impacto del Proyecto: Mejoré la experiencia del usuario, optimicé tiempos de entrega y fortalecí la estabilidad de la aplicación."
+          ]
+        },
+        {
+          "title": "Zion Robotics - Desarrollador .Net",
+          "items": [
+            "Marzo 2023 - Noviembre 2023",
+            "Desarrollo Frontend en Alquimia Pay: Contribuí al desarrollo de la aplicación web 5.0 del cliente.",
+            "Creación de Vistas: Diseñé módulos como Membresías, reloj checador, wallet, administración de Personas Morales y Físicas, y control de transacciones de tarjetas de gasto empresarial.",
+            "Gestión de Cuentas y Usuarios: Administré cuentas vinculadas, usuarios asociados y seguimiento de pagos pendientes.",
+            "Implementación de API Gateway: Integré conexiones con API Gateway mediante inyección de dependencias, microservicios y Ajax."
+          ]
+        },
+        {
+          "title": "I.Net Soluciones - Desarrollador .Net",
+          "items": [
+            "Enero 2022 - Febrero 2023",
+            "Creación de Portal Web: Desarrollé una aplicación para exponer y administrar información de nuevos clientes para el área comercial.",
+            "Gestión de Información: Un asesor podía administrar datos recabados desde una app móvil mediante el portal.",
+            "Módulos Implementados: Incluye ofertas, notificaciones, grupos, clientes y puntos de carga (medidores).",
+            "Tecnologías Utilizadas: Desarrollo con Asp .Net, .Net Framework 4.6, C#, Azure (Base de datos, App Services), Linq, Entity Framework y SQL Server 2016.",
+            "Arquitectura en Capas: Implementación de un diseño estructurado con herramientas como Postman.",
+            "Desarrollo de Sitio Web para Comisiones: Creé un portal para la administración y cálculos del módulo de comisiones a pagar a promotores de ventas de Italpasta.",
+            "Tecnologías del Sitio Web: MVC .Net 5.0, SQL Server 2017, Entity Framework y Bootstrap.",
+            "Servicio Windows para Cálculo de Comisiones: Desarrollé un servicio para procesar cálculos de comisiones de manera programada y asíncrona.",
+            "Tecnologías del Servicio: Implementación en .Net Framework 4.7 con acceso a SQL Server 2017."
+          ]
+        },
+        {
+          "title": "Desarrollador Web Freelance - Grupo Huerta",
+          "items": [
+            "Mayo 2021 - Noviembre 2021",
+            "Desarrollo de Sitio Web para Encuestas: Creé un sistema de encuestas de satisfacción al cliente con PHP y Laravel 8.",
+            "Gestión de Puntos de Venta: Implementé conexiones remotas a diversas bases de datos de cada punto de venta.",  
+            "Envío de Encuestas Personalizadas: Configuré el servidor de correos de cada concesionaria para enviar encuestas con correos y logos personalizados.",
+            "Análisis de Encuestas: El sistema proporciona estadísticas sobre la cantidad de encuestas por concesionaria, resultados positivos y negativos en rangos de fechas.",
+            "Estadísticas Detalladas: Se generaron reportes por asesor, departamento y análisis de preguntas con mayor y menor puntaje.",
+            "Personalización de Encuestas: Implementación de preguntas abiertas, selects, caritas, estrellas, opciones múltiples, entre otros formatos.",
+            "Gestión de Bases de Datos: Se usaron SQL Server para los puntos de venta y MySQL para la base de datos de usuarios del sistema.",
+            "Despliegue del Sistema: Implementado en red local y accesible a otros puntos de venta mediante una IP pública."
+          ]
+        }
+      ]
+    }
+  }
+}
