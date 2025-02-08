@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Portfolio Personal",
+    "description": "Portfolio web personal desarrollado con React y CSS moderno. Incluye modo oscuro, animaciones y diseño responsive.",
+    "image": "../../public/images/portfolio.png",
+    "technologies": ["React", "CSS", "JavaScript"],
+    "github": "https://github.com/tuUsuario/portfolio",
+    "demo": "https://tuportfolio.com"
+  },
+  {
+    "title": "E-commerce Dashboard",
+    "description": "Panel de administración para e-commerce con gestión de productos, pedidos y usuarios. Incluye gráficos y análisis de datos.",
+    "image": "../../public/images/dashboard.png",
+    "technologies": ["React", "Laravel", "MySQL"],
+    "github": "https://github.com/tuUsuario/dashboard",
+    "demo": "https://dashboard-demo.com"
+  },
+  {
+    "title": "Sistema de Gestión de Tareas",
+    "description": "Aplicación web para gestión de tareas con React y CSS moderno. Incluye modo oscuro, animaciones y diseño responsive.",
+    "image": "/src/assets/images/Projects/TaskReactJS.png",
+    "technologies": ["React", "CSS", "JavaScript"],
+    "github": "https://github.com/jafetdk22/CursoReactJS",
+    "demo": "https://jafetdk22.github.io/CursoReactJS/"
+
+  }
+] 
