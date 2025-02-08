@@ -1,34 +1,8 @@
 import './Projects.css';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import projects from '../../data/projects.json'; // Se importa el JSON con los datos de los proyectos
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Portfolio Personal",
-      description: "Portfolio web personal desarrollado con React y CSS moderno. Incluye modo oscuro, animaciones y diseño responsive.",
-      image: "../../public/images/portfolio.png",
-      technologies: ["React", "CSS", "JavaScript"],
-      github: "https://github.com/tuUsuario/portfolio",
-      demo: "https://tuportfolio.com"
-    },
-    {
-      title: "E-commerce Dashboard",
-      description: "Panel de administración para e-commerce con gestión de productos, pedidos y usuarios. Incluye gráficos y análisis de datos.",
-      image: "../../public/images/dashboard.png",
-      technologies: ["React", "Laravel", "MySQL"],
-      github: "https://github.com/tuUsuario/dashboard",
-      demo: "https://dashboard-demo.com"
-    },
-    {
-      title: "Sistema de Gestión",
-      description: "Aplicación web para gestión de recursos empresariales. Control de inventario, facturación y reportes.",
-      image: "../../public/images/sistema.png",
-      technologies: ["PHP", "Laravel", "Bootstrap"],
-      github: "https://github.com/tuUsuario/sistema",
-      demo: "https://sistema-demo.com"
-    }
-  ];
-
   return (
     <section className="projects-section" id="projects">
       <h2>Proyectos</h2>
