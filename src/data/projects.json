@@ -2,22 +2,22 @@
   {
     "title": "Portfolio Personal",
     "description": "Portfolio web personal desarrollado con React y CSS moderno. Incluye modo oscuro, animaciones y diseño responsive.",
-    "image": "../../public/images/portfolio.png",
-    "technologies": ["React", "CSS", "JavaScript"],
-    "github": "https://github.com/tuUsuario/portfolio",
+    "image": "/src/assets/images/Projects/Portafolio.png",
+    "technologies": ["React", "ViteJS", "TailwindCSS"],
+    "github": "https://github.com/jafetdk22/PortafolioReactJS",
     "demo": "https://tuportfolio.com"
   },
   {
     "title": "E-commerce Dashboard",
-    "description": "Panel de administración para e-commerce con gestión de productos, pedidos y usuarios. Incluye gráficos y análisis de datos.",
-    "image": "../../public/images/dashboard.png",
-    "technologies": ["React", "Laravel", "MySQL"],
-    "github": "https://github.com/tuUsuario/dashboard",
-    "demo": "https://dashboard-demo.com"
+    "description": "Demo e-commerce con gestión de productos, pedidos y usuarios. Diseño responsive.",
+    "image": "/src/assets/images/Projects/Shopi.png",
+    "technologies": ["React", "ViteJS", "TailwindCSS"],
+    "github": "https://github.com/jafetdk22/CursoReactVueAndTailwindCSS",
+    "demo": "https://cheery-pegasus-282608.netlify.app/"
   },
   {
     "title": "Sistema de Gestión de Tareas",
-    "description": "Aplicación web para gestión de tareas con React y CSS moderno. Incluye modo oscuro, animaciones y diseño responsive.",
+    "description": "Aplicación web para gestión de tareas con React y CSS moderno. Animaciones y diseño responsive.",
     "image": "/src/assets/images/Projects/TaskReactJS.png",
     "technologies": ["React", "CSS", "JavaScript"],
     "github": "https://github.com/jafetdk22/CursoReactJS",
