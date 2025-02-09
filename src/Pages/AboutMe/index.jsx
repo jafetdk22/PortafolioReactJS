@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { FaCode, FaGraduationCap, FaBriefcase } from "react-icons/fa";
-import Modal from '../../Components/Modal/Modal';
+import React from 'react';
+const Modal = React.lazy(() => import('../../Components/Modal/Modal'));
 import modalData from '../../data/modalContents.json';
 import './AboutMe.css';
+
 
 const AboutMe = () => {
   const [modalInfo, setModalInfo] = useState({ isOpen: false, content: null });
