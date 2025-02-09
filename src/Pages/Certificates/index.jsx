@@ -2,13 +2,6 @@ import { useState } from 'react';
 import certificatesData from '../../data/certificates.json';
 import './Certificates.css';
 
-// Importar solo la primera imagen
-import cursoBasicoCSharp from '../../assets/images/Cursos/CursoBasicodeCsharp.png';
-
-// Mapeo solo para la primera imagen
-const imageMap = {
-  '/src/assets/images/Cursos/CursoBasicodeCsharp.png': cursoBasicoCSharp
-};
 
 const Certificates = () => {
   const [selectedCategory, setSelectedCategory] = useState('courses');
