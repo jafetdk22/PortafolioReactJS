@@ -11,7 +11,7 @@ const Home = () => {
  
   return (
     <Layout>
-      <div className="home-container">
+      <div className="home-container ms-0">
         <Inicio />
         <AboutMe />
         <Technologies />

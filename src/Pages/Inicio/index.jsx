@@ -7,7 +7,7 @@ const Inicio = () => {
     }
   };
     return (
-        <section className="hero-section" id="inicio">
+        <section className="hero-section pt-12" id="inicio">
         <div className="hero-content">
           <h1>
             ¡Hola! Soy <span className="highlight">Jafet Solano</span>
