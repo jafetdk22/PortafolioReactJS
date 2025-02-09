@@ -33,7 +33,7 @@ const Inicio = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src="../../public/images/Jafet.png" alt="Foto de perfil" />
+          <img src="https://i.postimg.cc/KvDPtcM4/Jafet.png" alt="Foto de perfil" />
         </div>
       </section>
     );
