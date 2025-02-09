@@ -6,7 +6,6 @@ import './Certificates.css';
 const Certificates = () => {
   const [selectedCategory, setSelectedCategory] = useState('courses');
 
-
   return (
     <section className="certificates-section" id="certificates">
       <h2>Certificados</h2>
