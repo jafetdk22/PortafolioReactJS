@@ -28,7 +28,8 @@ const Certificates = () => {
           <div key={cert.id} className="certificate-card">
             <img 
               src={cert.image} 
-              alt={cert.title} 
+              alt={cert.title}
+              loading="lazy"
               className="certificate-image"
             />
             <div className="certificate-content">
