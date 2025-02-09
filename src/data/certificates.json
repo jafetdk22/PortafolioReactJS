@@ -7,7 +7,7 @@
         "title": "Curso Básico de Programación con C#",
         "platform": "Platzi",
         "date": "Enero 2025",
-        "image": "/src/assets/images/Cursos/CursoBasicodeCsharp.png",
+        "image": "https://i.postimg.cc/P5NCNdbg/Curso-Basicode-Csharp.png",
         "link": "https://platzi.com/p/jafet-solano/curso/3086-csharp/diploma/detalle/"
       },
       {
@@ -16,7 +16,7 @@
         "title": "Curso de APIs con .NET",
         "platform": "Platzi",
         "date": "Enero 2025",
-        "image": "/src/assets/images/Cursos/ApisConNet.png", 
+        "image": "https://i.postimg.cc/cCZKJYTh/Apis-Con-Net.png", 
         "link": "https://platzi.com/p/jafet-solano/curso/2983-apis-net/diploma/detalle/"
       },
       {
@@ -24,7 +24,7 @@
         "title": "Curso de Aplicaciones Web con Blazor WebAssembly y .NET",
         "platform": "Platzi",
         "date": "Enero 2025",
-        "image": "/src/assets/images/Cursos/AplicacionesWebConBlazorWebassemblyYNet.png",
+        "image": "https://i.postimg.cc/gcqXTSkT/Aplicaciones-Web-Con-Blazor-Webassembly-YNet.png",
         "link": "https://platzi.com/p/jafet-solano/curso/5382-blazor-webassembly/diploma/detalle/"
       },
       {
@@ -32,7 +32,7 @@
         "title": "Curso de Buenas Prácticas y Código Limpio en C#",
         "platform": "Platzi",
         "date": "Enero 2025",
-        "image": "/src/assets/images/Cursos/BuenasPracticasYCodigoLimpioEnCSharp.png",
+        "image": "https://i.postimg.cc/8cH7f50S/Buenas-Practicas-YCodigo-Limpio-En-CSharp.png",
         "link": "https://platzi.com/p/jafet-solano/curso/4788-clean-code-csharp/diploma/detalle/"
       },
       {
@@ -40,7 +40,7 @@
         "title": "Curso de Fundamentos de .NET",
         "platform": "Platzi",
         "date": "Enero 2025",
-        "image": "/src/assets/images/Cursos/FundamentosDeNet.png",
+        "image": "https://i.postimg.cc/JzgGkSPG/Fundamentos-De-Net.png",
         "link": "https://platzi.com/p/jafet-solano/curso/2883-fundamentos-net/diploma/detalle/"
       },
       {
@@ -48,7 +48,7 @@
         "title": "Curso de Programación Orientada a Objetos con C#",
         "platform": "Platzi",
         "date": "Enero 2025",
-        "image": "/src/assets/images/Cursos/ProgramacionOrientadaAObjetosConCSharp.png",
+        "image": "https://i.postimg.cc/q73gXQ5Q/Programacion-Orientada-AObjetos-Con-CSharp.png",
         "link": "https://platzi.com/p/jafet-solano/curso/8036-c-sharp-poo/diploma/detalle/"
       },
       {
@@ -56,7 +56,7 @@
         "title": "Curso de Unit Testing con C# y .NET",
         "platform": "Platzi",
         "date": "Enero 2025",
-        "image": "/src/assets/images/Cursos/CursoDeUnitTestingConCSharpYNet.png",
+        "image": "https://i.postimg.cc/yYLJVDRh/Curso-De-Unit-Testing-Con-CSharp-YNet.png",
         "link": "https://platzi.com/p/jafet-solano/curso/7995-unit-testing-csharp/diploma/detalle/"
       },
       {
@@ -64,23 +64,24 @@
         "title": "Curso de React.js",
         "platform": "Platzi",
         "date": "Febrero 2025",
-        "image": "/src/assets/images/Cursos/ReactJS.png",
+        "image": "https://i.postimg.cc/Kzhj9BXb/ReactJS.png",
         "link": "https://platzi.com/p/jafet-solano/curso/7395-react/diploma/detalle/"
       },
       {
         "id": 9,
-        "title": "Curso de Inglés Básico A1 para Principiantes",
+        "title": "Basic English Course A1 for Beginners",
         "platform": "Platzi",
         "date": "November 2024",
-        "image": "/src/assets/images/Cursos/BasicEnglishCourseA1ForBeginners.png",
+        "image": "https://i.postimg.cc/26nbmTd3/Basic-English-Course-A1-For-Beginners.png",
         "link": "https://platzi.com/p/jafet-solano/curso/10629-ingles-a1-principiantes/diploma/detalle/"
       },
       {
         "id": 10,
-        "title": "Curso de Inglés Básico A2: Preguntas y Respuestas Comunes",
+        "title": "Basic English Course A2: Common Questions and Answers",
         "platform": "Platzi",
         "date": "January 2025",
-        "image": "/src/assets/images/Cursos/CommonQuestionsAndAswers.png",
+        "image": "https://i.postimg.cc/9FmR5dDF/Common-Questions-And-Aswers.png",
+
         "link": "https://platzi.com/p/jafet-solano/curso/4988-basico-preguntas-respuestas/diploma/detalle/"
       }
       ,
@@ -89,7 +90,7 @@
         "title": "Curso de React JS con ViteJS y TailwindCSS",
         "platform": "Platzi",
         "date": "Febrero 2025",
-        "image": "/src/assets/images/Cursos/ReactJSWithViteJSAndTailwindCSS.png",
+        "image": "https://i.postimg.cc/nzKzNrZD/React-JSWith-Vite-JSAnd-Tailwind-CSS.png",
         "link": "https://platzi.com/p/jafet-solano/curso/7396-react-vite-tailwindcss/diploma/detalle/"
       }
     ]
@@ -102,7 +103,7 @@
         "title": "Backend con C# y .NET",
         "platform": "Platzi",
         "date": "Enero 2025",
-        "image": "/src/assets/images/Certificados/BackendConCSharpYNet.png",
+        "image": "https://i.postimg.cc/DzrnwNDV/Backend-Con-CSharp-YNet.png",
         "link": "https://platzi.com/p/jafet-solano/ruta/9560-web-net/diploma/detalle/"
 
       },
@@ -111,7 +112,7 @@
         "title": "Introduction to Programming using HTML and CSS",
         "platform": "Microsoft Technology Associate",
         "date": "Marzo 2021",
-        "image": "/src/assets/images/Certificados/Html5Css3.png",
+        "image": "https://i.postimg.cc/DZ5hqXnB/Html5-Css3.jpg",
         "link": " "
       },
       {
@@ -119,7 +120,7 @@
         "title": "Grade 4 Graded Examination in spoken English (GESE)",
         "platform": "Trinity College London",
         "date": "March 2023",
-        "image": "/src/assets/images/Certificados/TrinityCollegeLondonGade4.png",
+        "image": "https://i.postimg.cc/ZRJZBctW/Trinity-College-London-Gade4.jpg",
         "link": " "
       }
     ]
