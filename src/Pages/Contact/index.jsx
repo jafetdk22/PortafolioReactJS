@@ -1,4 +1,4 @@
-import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -19,16 +19,12 @@ const Contact = () => {
               <FaLinkedin className="contact-icon" />
               <p className="contact-text">Jafet Solano</p>
             </div>
-
-
           </a>
           
           <a href="https://github.com/jafetdk22" target="_blank" rel="noopener noreferrer" className="contact-link">
             <div className="contact-item">
               <FaGithub className="contact-icon" />
               <p className="contact-text">jafetdk22</p>
-
-
             </div>
           </a>
         </div>

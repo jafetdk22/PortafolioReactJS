@@ -3,6 +3,7 @@ import certificatesData from '../../data/certificates.json';
 import './Certificates.css';
 
 
+
 const Certificates = () => {
   const [selectedCategory, setSelectedCategory] = useState('courses');
 

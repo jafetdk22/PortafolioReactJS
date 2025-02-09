@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+/* Asegúrate de que el contraste sea alto */
+body {
+    background-color: #ffffff; /* Fondo claro */
+    color: #333333; /* Texto oscuro */
+}

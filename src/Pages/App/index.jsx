@@ -1,9 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Home from "../Home";
-import NotFound from "../NotFound";
-
-import Navbar from "../../Components/NavBar";
+import React, { Suspense, lazy } from 'react';
+const Navbar = React.lazy(() => import('../../Components/NavBar'));
+const Home = React.lazy(() => import('../Home'));
+const NotFound = React.lazy(() => import('../NotFound'));
 import "./App.css";
 
 const AppRoutes = () => {
@@ -19,7 +18,9 @@ const App = () => {
   return (
       <BrowserRouter>
         <Navbar/>
-        <AppRoutes/>
+        <Suspense fallback={<div>Cargando...</div>}>
+          <AppRoutes/>
+        </Suspense>
       </BrowserRouter>
   );
 };
