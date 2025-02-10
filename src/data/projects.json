@@ -8,8 +8,8 @@
     "demo": "https://tuportfolio.com"
   },
   {
-    "title": "E-commerce Dashboard",
-    "description": "Demo e-commerce con gestión de productos, pedidos y usuarios. Diseño responsive.",
+    "title": "Panel de control de comercio electrónico",
+    "description": "Demo e-commerce con gestión de productos, pedidos y usuarios.",
     "image": "https://i.postimg.cc/dtK4s7Gx/Shopi.webp",
     "technologies": ["React", "ViteJS", "TailwindCSS"],
     "github": "https://github.com/jafetdk22/CursoReactVueAndTailwindCSS",
@@ -23,5 +23,39 @@
     "github": "https://github.com/jafetdk22/CursoReactJS",
     "demo": "https://jafetdk22.github.io/CursoReactJS/"
 
+  },
+  {
+    "title": "Sistema de Gestión Encuestas",
+    "description": "Aplicación web para gestión de encuestas con Laravel 8 y Bootstrap 5. Animaciones.",
+    "image": "https://i.postimg.cc/7hWmqFW4/10.webp",
+    "technologies": ["Laravel", "Bootstrap", "JavaScript"],
+    "github": "https://github.com/jafetdk22/DemoEncuestasSistema",
+    "demo": "",
+    "images":[
+      {
+        "image": "https://i.postimg.cc/3rnqL69n/1.webp",
+        "description": "Imagen 1"
+      },
+      {
+        "image": "https://i.postimg.cc/c4zbWnp3/2.webp",
+        "description": "Imagen 2"
+      },
+      {
+        "image": "https://i.postimg.cc/T3WH3Px4/3.webp",
+        "description": "Imagen 3"
+      },
+      {
+        "image": "https://i.postimg.cc/HsnhF2hH/4.webp",
+        "description": "Imagen 4"
+      },
+      {
+        "image": "https://i.postimg.cc/7L8tGyYY/5.webp",
+        "description": "Imagen 5"
+      },
+      {
+        "image": "https://i.postimg.cc/Bb6m9SNN/9.webp",
+        "description": "Imagen 9"
+      }
+    ]
   }
 ] 
