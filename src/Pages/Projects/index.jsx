@@ -5,7 +5,21 @@ import React, { useContext } from 'react';
 import { PortafolioContext } from '../../Context';
 
 
-const ProjectCard = React.memo(({ project, onOpenModal }) => {
+const ProjectCard = React.memo(({ project}) => {
+  const context = useContext(PortafolioContext);
+  const renderModalContent = (images) => {
+    return images.map((image, index) => (
+      <div className="modal-image mb-6" key={index}>
+        <img key={index} src={image.image} alt={image.description} />
+      </div>
+    ));
+  };
+  
+  const GetModalContent = (images, title) => {
+    context.openModal(images, title);
+    context.setCurrentContent(renderModalContent(images));
+  };
+
   return (
     <div className="project-card">
       <div className="project-image">
@@ -21,7 +35,7 @@ const ProjectCard = React.memo(({ project, onOpenModal }) => {
               </a>
             )}
             {project.images && (
-              <a onClick={() => onOpenModal(project.images, project.title)} target="_blank" rel="noopener noreferrer">
+              <a onClick={() => GetModalContent(project.images, project.title)} target="_blank" rel="noopener noreferrer">
               <FaEye />
             </a>
         )}
@@ -44,15 +58,13 @@ const ProjectCard = React.memo(({ project, onOpenModal }) => {
 });
 
 const Projects = () => {
-  const context = useContext(PortafolioContext);
-
   return (
     <section className="projects-section" id="projects">
       <h2>Proyectos</h2>
       <div className="projects-grid">
         {
         projects.map((project, index) => (
-          <ProjectCard project={project} key={index} onOpenModal={() => context.openModal(project.images, project.title)} />)
+          <ProjectCard project={project} key={index} />)
         )}
       </div>
     </section>

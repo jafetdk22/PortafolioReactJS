@@ -1,13 +1,15 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import { FaCode, FaGraduationCap, FaBriefcase } from "react-icons/fa";
 import React from 'react';
-const Modal = React.lazy(() => import('../../Components/Modal/Modal'));
+import { PortafolioContext } from '../../Context';
 import modalData from '../../data/modalContents.json';
 import './AboutMe.css';
 
 
+
+
 const AboutMe = () => {
-  const [modalInfo, setModalInfo] = useState({ isOpen: false, content: null });
+  const context = useContext(PortafolioContext);
 
   const renderModalContent = (content) => {
     return (
@@ -35,20 +37,15 @@ const AboutMe = () => {
     );
   };
 
-  const openModal = (type) => {
+  const getModalContent = (type) => {
     const selectedContent = modalData[type];
-    setModalInfo({
-      isOpen: true,
-      content: {
-        title: selectedContent.title,
-        content: renderModalContent(selectedContent.content)
-      }
-    });
+    context.openModal(
+      selectedContent.content,
+      selectedContent.title
+    );
+    context.setCurrentContent(renderModalContent(selectedContent.content));
   };
 
-  const closeModal = () => {
-    setModalInfo({ isOpen: false, content: null });
-  };
 
   return (
     <section className="about-me-section" id="about-me">
@@ -62,17 +59,19 @@ const AboutMe = () => {
             modernas y escalables.
           </p>
           <div className="about-highlights">
-            <div className="highlight-card cursor-pointer" onClick={() => openModal('development')}>
+            <div className="highlight-card cursor-pointer" onClick={() => getModalContent('development')}>
               <FaCode className="highlight-icon" />
               <h3>Desarrollo Web</h3>
               <p>Especializado en tecnologías modernas de frontend y backend</p>
             </div>
-            <div className="highlight-card cursor-pointer" onClick={() => openModal('education')}>
+
+            <div className="highlight-card cursor-pointer" onClick={() => getModalContent('education')}>
               <FaGraduationCap className="highlight-icon" />
               <h3>Educación</h3>
               <p>Ingeniero en Sistemas Computacionales</p>
+
             </div>
-            <div className="highlight-card cursor-pointer" onClick={() => openModal('experience')}>
+            <div className="highlight-card cursor-pointer" onClick={() => getModalContent('experience')}>
               <FaBriefcase className="highlight-icon" />
               <h3>Experiencia</h3>
               <p>5+ años en desarrollo de software</p>
@@ -80,14 +79,6 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-
-      <Modal 
-        isOpen={modalInfo.isOpen}
-        onClose={closeModal}
-        title={modalInfo.content?.title}
-      >
-        {modalInfo.content?.content}
-      </Modal>
     </section>
   );
 };

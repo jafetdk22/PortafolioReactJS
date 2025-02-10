@@ -5,7 +5,7 @@ const Home = React.lazy(() => import('../Home'));
 const NotFound = React.lazy(() => import('../NotFound'));
 import { PortafolioProvider } from "../../Context";
 import "./App.css";
-
+import Modal from "../../Components/Modal/Modal";
 const AppRoutes = () => {
   return (
       <Routes>
@@ -19,6 +19,7 @@ const App = () => {
   return (
     <PortafolioProvider>
       <BrowserRouter>
+        <Modal/>
         <Navbar/>
         <Suspense fallback={<div>Cargando...</div>}>
           <AppRoutes/>

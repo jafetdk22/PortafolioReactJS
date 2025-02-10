@@ -1,13 +1,24 @@
-import { useState, useContext } from "react";
 import certificatesData from "../../data/certificates.json";
 import "./Certificates.css";
-import { PortafolioContext } from "../../Context";
 import { FaEye } from "react-icons/fa";
+import { useState, useContext } from "react";
+import { PortafolioContext } from "../../Context";
 
 const Certificates = () => {
   const context = useContext(PortafolioContext);
   const [selectedCategory, setSelectedCategory] = useState("courses");
-
+  const renderModalContent = (images) => {
+    return images.map((image, index) => (
+      <div className="modal-image mb-6" key={index}>
+        <img key={index} src={image.image} alt={image.description} />
+      </div>
+    ));
+  };
+  
+  const GetModalContent = (images, title) => {
+    context.openModal(images, title);
+    context.setCurrentContent(renderModalContent(images));
+  };
   return (
     <section className="certificates-section" id="certificates">
       <h2>Certificados</h2>
@@ -44,15 +55,12 @@ const Certificates = () => {
               <div className="certificate-actions flex justify-between items-end">
                 <div className="me-3 flex items-center">
                   <a
-                    onClick={() =>
-                      context.openModal(
-                        [{ image: cert.image, description: cert.title }],
-                        cert.title
-                      )
-                    }
+                    onClick={() => GetModalContent([{image: cert.image, description: cert.title}], cert.title)}
                     className="certificate-link"
                   >
                     <FaEye />
+
+
                   </a>
                 </div>
                 <div>
