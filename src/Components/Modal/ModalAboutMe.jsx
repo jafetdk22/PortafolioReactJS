@@ -1,12 +1,10 @@
-import React, { useEffect, useContext } from 'react';
-import { PortafolioContext } from '../../Context';
+import React, { useEffect} from 'react';
 import './Modal.css';
 
-const Modal = () => {
-  const context = useContext(PortafolioContext);
-
+const ModalAboutMe = ({children, isModalOpen, closeModal, currentTitle}) => {
   useEffect(() => {
-    if (context.isModalOpen) {
+    if (isModalOpen) {
+
       document.body.style.overflow = 'hidden'; // Desactiva el scroll
 
     } else {
@@ -16,27 +14,24 @@ const Modal = () => {
     return () => {
       document.body.style.overflow = 'unset'; // Asegura que el scroll se reactive al desmontar
     };
-  }, [context.isModalOpen]);
+  }, [isModalOpen]);
 
-  if (!context.isModalOpen) return null;
+  if (!isModalOpen) return null;
 
 
   return (
-    <div className="modal-overlay" onClick={context.closeModal}>
-
+    <div className="modal-overlay" onClick={closeModal}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
-          <h3>{context.currentTitle}</h3>
-          <button className="modal-close" onClick={context.closeModal}>×</button>
+          <h3>{currentTitle}</h3>
+          <button className="modal-close" onClick={closeModal}>×</button>
         </div>
-
         <div className="modal-body">
-          {context.currentContent}
+          {children}
         </div>
       </div>
     </div>
-
   );
 };
 
-export default Modal; 
+export default ModalAboutMe; 
