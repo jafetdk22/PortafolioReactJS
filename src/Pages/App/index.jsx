@@ -3,6 +3,7 @@ import React, { Suspense, lazy } from 'react';
 const Navbar = React.lazy(() => import('../../Components/NavBar'));
 const Home = React.lazy(() => import('../Home'));
 const NotFound = React.lazy(() => import('../NotFound'));
+import { PortafolioProvider } from "../../Context";
 import "./App.css";
 
 const AppRoutes = () => {
@@ -16,12 +17,15 @@ const AppRoutes = () => {
 
 const App = () => {
   return (
+    <PortafolioProvider>
       <BrowserRouter>
         <Navbar/>
         <Suspense fallback={<div>Cargando...</div>}>
           <AppRoutes/>
         </Suspense>
       </BrowserRouter>
+    </PortafolioProvider>
+
   );
 };
 

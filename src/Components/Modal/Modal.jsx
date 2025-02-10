@@ -1,10 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
+import { PortafolioContext } from '../../Context';
 import './Modal.css';
 
-const Modal = ({ isOpen, onClose, title, children }) => {
+const Modal = () => {
+  const context = useContext(PortafolioContext);
   useEffect(() => {
-    if (isOpen) {
+    if (context.isModalOpen) {
       document.body.style.overflow = 'hidden'; // Desactiva el scroll
+
     } else {
       document.body.style.overflow = 'unset'; // Reactiva el scroll
     }
@@ -12,22 +15,30 @@ const Modal = ({ isOpen, onClose, title, children }) => {
     return () => {
       document.body.style.overflow = 'unset'; // Asegura que el scroll se reactive al desmontar
     };
-  }, [isOpen]);
+  }, [context.isModalOpen]);
 
-  if (!isOpen) return null;
+  if (!context.isModalOpen) return null;
+
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
+    <div className="modal-overlay" onClick={context.closeModal}>
+
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
-          <h3>{title}</h3>
-          <button className="modal-close" onClick={onClose}>×</button>
+          <h3>{context.currentTitle}</h3>
+          <button className="modal-close" onClick={context.closeModal}>×</button>
         </div>
+
         <div className="modal-body">
-          {children}
+          {context.currentImages.map((image, index) => (
+            <div className="modal-image mb-6" key={index}>
+              <img key={index} src={image.image} alt={image.description} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
+
   );
 };
 

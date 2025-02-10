@@ -1,8 +1,9 @@
 import './Projects.css';
 import { FaGithub, FaExternalLinkAlt, FaEye } from 'react-icons/fa';
 import projects from '../../data/projects.json';
-import React, { useState } from 'react';
-import Modal from '../../Components/Modal/Modal';
+import React, { useContext } from 'react';
+import { PortafolioContext } from '../../Context';
+
 
 const ProjectCard = React.memo(({ project, onOpenModal }) => {
   return (
@@ -20,7 +21,7 @@ const ProjectCard = React.memo(({ project, onOpenModal }) => {
               </a>
             )}
             {project.images && (
-              <a onClick={onOpenModal} target="_blank" rel="noopener noreferrer">
+              <a onClick={() => onOpenModal(project.images, project.title)} target="_blank" rel="noopener noreferrer">
               <FaEye />
             </a>
         )}
@@ -43,22 +44,7 @@ const ProjectCard = React.memo(({ project, onOpenModal }) => {
 });
 
 const Projects = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentImages, setCurrentImages] = useState([]);
-  const [currentTitle, setCurrentTitle] = useState('');
-
-
-  const openModal = (images, title) => {
-    setCurrentImages(images);
-    setCurrentTitle(title);
-    setIsModalOpen(true);
-  };
-
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setCurrentImages([]);
-  };
+  const context = useContext(PortafolioContext);
 
   return (
     <section className="projects-section" id="projects">
@@ -66,18 +52,10 @@ const Projects = () => {
       <div className="projects-grid">
         {
         projects.map((project, index) => (
-          <ProjectCard project={project} key={index} onOpenModal={() => openModal(project.images, project.title)} />)
+          <ProjectCard project={project} key={index} onOpenModal={() => context.openModal(project.images, project.title)} />)
         )}
       </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal} title={currentTitle}>
-          {currentImages.map((image, index) => (
-            <div className="modal-image mb-6" key={index}>
-              <img key={index} src={image.image} alt={image.description} />
-            </div>
-          ))}
-      </Modal>
     </section>
-
   );
 };
 
