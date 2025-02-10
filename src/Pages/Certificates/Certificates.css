@@ -24,6 +24,10 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .certificate-card:hover {
@@ -76,6 +80,10 @@
 
 .certificate-link:hover {
   color: var(--primary-color-light);
+}
+
+.certificate-actions {
+  margin-top: auto;
 }
 
 /* Responsive */
