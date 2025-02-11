@@ -19,11 +19,12 @@ const App = () => {
   return (
     <PortafolioProvider>
       <BrowserRouter>
-        <Modal/>
         <Navbar/>
         <Suspense fallback={<div>Cargando...</div>}>
           <AppRoutes/>
         </Suspense>
+        <Modal/>
+
       </BrowserRouter>
     </PortafolioProvider>
 
