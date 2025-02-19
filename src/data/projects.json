@@ -13,7 +13,7 @@
     "image": "https://i.postimg.cc/dtK4s7Gx/Shopi.webp",
     "technologies": ["React", "ViteJS", "TailwindCSS"],
     "github": "https://github.com/jafetdk22/CursoReactVueAndTailwindCSS",
-    "demo": "https://cheery-pegasus-282608.netlify.app/"
+    "demo": "https://shopi-demo.netlify.app/"
   },
   {
     "title": "Sistema de Gestión de Tareas",
