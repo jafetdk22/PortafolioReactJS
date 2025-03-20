@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { Suspense, lazy } from 'react';
 const Navbar = React.lazy(() => import('../../Components/NavBar'));
 const Home = React.lazy(() => import('../Home'));
+const Login = React.lazy(() => import('../Login'));
 const NotFound = React.lazy(() => import('../NotFound'));
 import { PortafolioProvider } from "../../Context";
 import "./App.css";
@@ -10,6 +11,7 @@ const AppRoutes = () => {
   return (
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path ="/login" element={<Login/>}/>
         <Route path="/*" element={<NotFound />} />
       </Routes>
   );
