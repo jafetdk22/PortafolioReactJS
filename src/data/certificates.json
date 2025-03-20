@@ -91,6 +91,14 @@
         "date": "Febrero 2025",
         "image": "https://i.postimg.cc/FR7nL2KC/React-JSWith-Vite-JSAnd-Tailwind-CSS.webp",
         "link": "https://platzi.com/p/jafet-solano/curso/7396-react-vite-tailwindcss/diploma/detalle/"
+      },
+      {
+        "id": 12,
+        "title": "Curso de React JS",
+        "platform": "Platzi",
+        "date": "Marzo 2025",
+        "image": "https://i.postimg.cc/zBvHMBDC/curso-React-JS.webp",
+        "link": "https://platzi.com/p/jafet-solano/curso/11887-reactjs/diploma/detalle/"
       }
     ]
   },
